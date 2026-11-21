@@ -1,0 +1,62 @@
+name: Bug report
+description: Something in the game is not working as it should.
+title: "[Cartoon Wars Gunner] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please search the existing issues first, your problem may already be reported.
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: Shown on the download page, for example 1.1.1.
+    validations:
+      required: true
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Shown on the download page, for example 1.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - Android
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Windows or Android version, and device
+      description: For example Windows 11 24H2, or Android 14 on a Pixel 8.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or video
+      description: Drag and drop files here if they help.
